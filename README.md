@@ -5,7 +5,7 @@ Deep Q-Learning and Double DQN on Atari Pong for CSCI 166.
 Author: **Alex Cortez**  
 Course: **CSCI 166**
 
----
+
 
 ## Project Overview
 
@@ -18,7 +18,7 @@ Goals:
 - Compare learning curves and final performance
 - Record early vs late gameplay videos
 
----
+
 
 ## Environment & Observations
 
@@ -34,7 +34,7 @@ Goals:
   - `-1` when the opponent scores  
   - `0` otherwise (sparse reward)
 
----
+
 
 ## Model Architecture
 
@@ -56,7 +56,7 @@ Training details:
 - ε-greedy exploration
 - Adam optimizer with MSE loss
 
----
+
 
 ## Hyperparameters
 
@@ -73,7 +73,7 @@ Training details:
 | Baseline DQN episodes    | ~450                       |
 | Double DQN episodes      | ~530                       |
 
----
+
 
 ## Double DQN vs DQN
 
@@ -99,7 +99,7 @@ Training details:
 
 This decoupling reduces Q-value overestimation and generally gives more stable learning.
 
----
+
 
 ## Learning Curves
 
@@ -117,7 +117,7 @@ Overall training performance (rolling mean of episodic returns):
   - Reaches around **−11** and stays more stable
   - Gameplay appears smoother and more controlled
 
----
+
 
 ## Files in This Repository
 
@@ -145,7 +145,7 @@ Overall training performance (rolling mean of episodic returns):
 - `models/*.dat` *(optional)*  
   Saved PyTorch weights for best baseline and DDQN models.
 
----
+
 
 ## How to Run (High Level)
 
@@ -160,7 +160,7 @@ Overall training performance (rolling mean of episodic returns):
 5. Run the **plotting** cell to regenerate the learning curves.
 6. (Optional) Run the **video-recording** cells to produce new early/late videos.
 
----
+
 
 ## Reflection (Short)
 
